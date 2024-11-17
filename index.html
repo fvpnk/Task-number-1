@@ -1,0 +1,74 @@
+<DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Task number 1</title>
+        <link rel="stylesheet" href="DefaultTask.css"> 
+    </head>
+    <body class="default">
+<div class="text"> Задача 1</div>
+        <table class="table">        
+            <tr>
+            <td>
+                <p class="text2"> Код программы:</p>
+              <p class="text2"> Файл RandomMatrix.java.</p>
+    <p class="text2"> import java.util.Random;</p>
+    <p class="text2"> import java.util.Scanner;</p>
+
+    <p class="text2"> public class RandomMatrix {</p>
+    <p style="text-indent:40px" class="text2"> public static void main(String[] args) {</p>
+    <p style="text-indent:80px" class="text2"> Scanner scanner = new Scanner(System.in);</p>
+    <p style="text-indent:80px" class="text2"> Random random = new Random();</p>
+
+    <p style="text-indent:80px" class="text2"> System.out.print("Введите размерность матрицы n: ");</p>
+    
+    <p style="text-indent:80px"class="text2"> int n = scanner.nextInt();</p>
+
+    <p style="text-indent:80px" class="text2"> double[][] matrix = new double[n][n]; </p>
+
+    <p style="text-indent:80px" class="text2"> System.out.println("Исходная матрица:");</p>
+    <p style="text-indent:80px" class="text2"> for (int i = 0; i < n; i++) { </p>
+    <p style="text-indent:120px" class="text2"> for (int j = 0; j < n; j++) { </p>
+    <p style="text-indent:160px" class="text2"> matrix[i][j] = -n + random.nextDouble() * (2 * n); </p>
+    <p style="text-indent:160px" class="text2"> System.out.print(String.format("%.2f", matrix[i][j]) + "\t"); </p>
+<p style="text-indent:120px" class="text2"> } </p> 
+<p style="text-indent:80px" class="text2"> System.out.println();</p>
+<p style="text-indent:80px" class="text2"> } </p> </br>
+
+<p style="text-indent:80px" class="text2"> int[][] roundedMatrix = new int[n][n];</p>
+<p style="text-indent:80px" class="text2"> for (int i = 0; i < n; i++) { </p>
+<p style="text-indent:120px" class="text2"> for (int j = 0; j < n; j++) { </p>
+<p style="text-indent:160px" class="text2"> roundedMatrix[i][j] = (int) Math.round(matrix[i][j]); </p>
+<p style="text-indent:120px" class="text2"> } </p>
+<p style="text-indent:80px" class="text2"> } </p></br>
+
+<p style="text-indent:80px" class="text2"> System.out.println("Округленная матрица:"); </p>
+<p style="text-indent:80px" class="text2"> for (int i = 0; i < n; i++) { </p>
+<p style="text-indent:120px" class="text2"> for (int j = 0; j < n; j++) { </p>
+<p style="text-indent:160px" class="text2"> System.out.print(roundedMatrix[i][j] + "\t"); </p> 
+<p style="text-indent:120px" class="text2"> } </p>
+<p style="text-indent:120px" class="text2"> System.out.println(); </p>
+<p style="text-indent:80px" class="text2">}</p>
+    <p style="text-indent:80px" class="text2"> scanner.close();</p> 
+    <p style="text-indent:40px" class="text2"> } </p> 
+<p class="text2">} </p>
+        </p>    
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <p class="text"> Скриншот результата </p>
+                  <img class="img" src="https://github.com/newsadness/Task-number-1/blob/main/1.png?raw=true">
+            </td>
+          </tr>
+          <tr>
+             <td> 
+                 <a href="https://newsadness.github.io/1st-week/"> 
+                   <button class="button"> назад </button> 
+                 </a> 
+            </td>
+          </tr>
+        </table> 
+    </body>
+</html>
+</DOCTYPE>
